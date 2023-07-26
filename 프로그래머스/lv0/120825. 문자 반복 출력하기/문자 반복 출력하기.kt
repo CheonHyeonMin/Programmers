@@ -1,14 +1,12 @@
 class Solution {
     fun solution(str: String, n: Int): String {
         var answer: String = ""
-        val a = str.split("")
-        val s = StringBuilder()
-        for (i in a) {
-            for (j in 0 until n) {
-                s.append(i)
+        
+        for(i in str){
+            for(j in 1..n){
+                answer+=i
             }
         }
-        return s.toString()
         
         
         
